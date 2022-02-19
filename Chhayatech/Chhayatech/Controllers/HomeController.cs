@@ -26,5 +26,31 @@ namespace Chhayatech.Controllers
 
             return View();
         }
+
+        public ActionResult EdFund()
+        {
+            return View();
+        }
+
+        public ActionResult Tour()
+        {
+            return View();
+
+        }
+
+
+        public ActionResult Healthinfo()
+        {
+            return View();
+        }
+
+
+        public ActionResult Career()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
     }
 }
