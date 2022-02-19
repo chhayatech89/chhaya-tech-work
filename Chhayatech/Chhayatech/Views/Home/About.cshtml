@@ -1,16 +1,205 @@
 ﻿@{
     ViewBag.Title = "Chhaya Tech Solution";
 }
-<div style="margin-top:12px;" align="center">
-    <h2><span style="color: #06BF06;">@ViewBag.Title</span></h2>
-    @*
-        <h3>@ViewBag.Message</h3>
+
+<head>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+div {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin-top: 52px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: darkseagreen;
+  font-weight: bold;
+  font-size: 28px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: cyan;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: cyan;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 518px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@*
+@webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
     *@
-    <p style="font-weight: bolder"><span style="background-color:chartreuse;">Chhaya Tech Solution, We power content, all tech learning, and software solutions for across the globe.</span></p>
-</div>
+
+    </style>
+</head>
+<body>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="~/Content/Images/img-1.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="/Images/img_2.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="/Images/img_3.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)"><b>&#10094;</b></a>
+        <a class="next" onclick="plusSlides(1)"><b>&#10095;</b></a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+    <div style="margin-top:12px;" align="center">
+        <h2><span style="color: #06BF06;">@ViewBag.Title</span></h2>
+        @*
+            <h3>@ViewBag.Message</h3>
+        *@
+        <p style="font-weight: bolder"><span style="background-color:chartreuse;">Chhaya Tech Solution, We power content, all tech learning, and software solutions for across the globe.</span></p>
+    </div>
     <div style="border:solid; margin-top:12px;">
         <marquee behavior="scroll" direction="left" scrollamount="4"><span style="font-size:24px; color:seagreen;">Chhaya Tech Coaching and Learning</span></marquee>
         <p><b>Chhaya Tech Solution, We are providing Coaching for all type tech like HTML, CSS, JAVASCRIPT, .NET, ASP.NET, C#, MVC, WEB API, AJAX, JQUERY, LINQ, SQL, SQL SERVER, PL SQL, XML, DTD, XSD, XSLT, XSL, XPATH, XQUERY, XSL-FO, QA, Software Testing, Software Management, Consultant, Agile, Scrum etc.</b></p>
+        <div>
+            <p style="color:cyan; font-size:14px;" align="center"><b>Other courses like MS-WORD, WORD, NOTEPAD, EXCEL, ADVANCE EXCEL, POWER POINT, TYPING etc.</b></p>
+            <ol>
+                <li>Microsoft Office</li>
+                <li>Typing Courses</li>
+                <li>Web Designing</li>
+                <li>Tally</li>
+                <li>Certification Course & Computer</li>
+                <li>Animation & VNX</li>
+                <li>Software Related Courses</li>
+                <li>IT Diploma</li>
+                <li>Digital Marketing</li>
+                <li>Data Analytics</li>
+                <li>Artificial Intelligence</li>
+                <li>Hardware Course</li>
+            </ol>
+        </div>
         <p><a class="btn btn-default" href="">Know more &raquo;</a></p>
     </div>
     <div style="border:solid; margin-top:12px;">
@@ -23,3 +212,4 @@
         <p><b>Chhaya Tech Solution, We are providing Consultant services for all IT type industries.</b></p>
         <p><a class="btn btn-default" href="">Know more &raquo;</a></p>
     </div>
+</body>
