@@ -159,3 +159,4 @@ C:\Users\Fateh\Desktop\zoom\Chhaya\08-Feb\Chhayatech\Chhayatech\bin\EntityFramew
 C:\Users\Fateh\Desktop\zoom\Chhaya\08-Feb\Chhayatech\Chhayatech\bin\EntityFramework.SqlServer.dll
 C:\Users\Fateh\Desktop\zoom\Chhaya\08-Feb\Chhayatech\Chhayatech\bin\EntityFramework.xml
 C:\Users\Fateh\Desktop\zoom\Chhaya\08-Feb\Chhayatech\Chhayatech\bin\EntityFramework.SqlServer.xml
+C:\Users\Fateh\Desktop\zoom\Chhaya\08-Feb\Chhayatech\Chhayatech\obj\Debug\Chhayatech.csprojAssemblyReference.cache

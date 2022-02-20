@@ -17,10 +17,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/10/2013 16:29:20</publishTime>
     </File>
     <File Include="bin/Chhayatech.dll">
-      <publishTime>02/19/2022 09:05:41</publishTime>
+      <publishTime>02/20/2022 17:01:59</publishTime>
     </File>
     <File Include="bin/Chhayatech.pdb">
-      <publishTime>02/19/2022 09:05:41</publishTime>
+      <publishTime>02/20/2022 17:01:59</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>10/23/2017 13:15:18</publishTime>
@@ -299,10 +299,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/08/2022 19:03:40</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
-      <publishTime>02/16/2022 18:43:25</publishTime>
+      <publishTime>02/20/2022 17:01:42</publishTime>
     </File>
     <File Include="Views/Home/Career.cshtml">
       <publishTime>02/16/2022 12:32:15</publishTime>
+    </File>
+    <File Include="Views/Home/carousel.cshtml">
+      <publishTime>02/20/2022 15:03:55</publishTime>
     </File>
     <File Include="Views/Home/Contact.cshtml">
       <publishTime>02/08/2022 22:42:51</publishTime>
@@ -313,8 +316,11 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/Home/Index.cshtml">
       <publishTime>02/08/2022 19:42:13</publishTime>
     </File>
+    <File Include="Views/Home/Technews.cshtml">
+      <publishTime>02/20/2022 00:25:28</publishTime>
+    </File>
     <File Include="Views/Home/Tour.cshtml">
-      <publishTime>02/16/2022 19:10:27</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>02/08/2022 19:02:39</publishTime>
@@ -323,10 +329,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/08/2022 23:02:37</publishTime>
     </File>
     <File Include="Views/Tech/Create.cshtml">
-      <publishTime>02/19/2022 00:20:33</publishTime>
+      <publishTime>02/19/2022 22:48:42</publishTime>
     </File>
     <File Include="Views/Tech/Delete.cshtml">
-      <publishTime>02/17/2022 19:04:19</publishTime>
+      <publishTime>02/20/2022 14:39:20</publishTime>
     </File>
     <File Include="Views/Tech/Details.cshtml">
       <publishTime>02/17/2022 19:04:19</publishTime>

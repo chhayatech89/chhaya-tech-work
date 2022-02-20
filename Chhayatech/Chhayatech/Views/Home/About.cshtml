@@ -111,37 +111,67 @@ img {vertical-align: middle;}
     </style>
 </head>
 <body>
+    <div><br/></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
 
-    <div class="slideshow-container">
 
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="~/Content/Images/img-1.jpg" style="width:100%">
-            <div class="text">Caption Text</div>
+                <!--<div id="imageCarousel" class="carousel slide" data-interval="2000"
+                data-ride="carousel" data-pause="hover" data-wrap="true">-->
+
+
+                <div id="imageCarousel" class="carousel slide" data-interval="false"
+                     data-pause="hover" data-wrap="true">
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#imageCarousel" data-slide-to="1"></li>
+                        <li data-target="#imageCarousel" data-slide-to="2"></li>
+                        <li data-target="#imageCarousel" data-slide-to="3"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="~/Content/Images/img-1.jpg" class="img-responsive" />
+                            <div class="carousel-caption">
+                                <h3></h3>
+                                <p style="font-weight: bold; color:yellow;font-size:small">Chhaya Tech's S/W Developer Community</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="~/Content/Images/img-2.jpg" width="100%" class="img-responsive" />
+                            <div class="carousel-caption">
+                                <h3></h3>
+                                <p style="font-weight: bold; color:yellow;font-size:small">Chhaya Tech's Software Company</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="~/Content/Images/img-3.jpg" width="100%" class="img-responsive" />
+                            <div class="carousel-caption">
+                                <h3></h3>
+                                <p style="font-weight: bold; color:yellow;font-size:small">Chhaya Tech's Search Engine Company</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="~/Content/Images/img-4.jpg" width="100%" class="img-responsive" />
+                            <div class="carousel-caption">
+                                <h3></h3>
+                                <p style="font-weight: bold; color:yellow;font-size:small">Chhaya Tech's Social Networking Company</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#imageCarousel" class="carousel-control left" data-slide="prev">
+                        <span style="background-color:forestgreen;" class="glyphicon glyphicon-hand-left"></span>
+                    </a>
+                    <a href="#imageCarousel" class="carousel-control right" data-slide="next">
+                        <span class="glyphicon glyphicon-hand-right"></span>
+                    </a>
+                </div>
+
+            </div>
         </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="/Images/img_2.jpg" style="width:100%">
-            <div class="text">Caption Two</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="/Images/img_3.jpg" style="width:100%">
-            <div class="text">Caption Three</div>
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)"><b>&#10094;</b></a>
-        <a class="next" onclick="plusSlides(1)"><b>&#10095;</b></a>
-
-    </div>
-    <br>
-
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
     </div>
 
     <script>
@@ -181,35 +211,95 @@ img {vertical-align: middle;}
         <p style="font-weight: bolder"><span style="background-color:chartreuse;">Chhaya Tech Solution, We power content, all tech learning, and software solutions for across the globe.</span></p>
     </div>
     <div style="border:solid; margin-top:12px;">
-        <marquee behavior="scroll" direction="left" scrollamount="4"><span style="font-size:24px; color:seagreen;">Chhaya Tech Coaching and Learning</span></marquee>
-        <p><b>Chhaya Tech Solution, We are providing Coaching for all type tech like HTML, CSS, JAVASCRIPT, .NET, ASP.NET, C#, MVC, WEB API, AJAX, JQUERY, LINQ, SQL, SQL SERVER, PL SQL, XML, DTD, XSD, XSLT, XSL, XPATH, XQUERY, XSL-FO, QA, Software Testing, Software Management, Consultant, Agile, Scrum etc.</b></p>
-        <div>
-            <p style="color:cyan; font-size:14px;" align="center"><b>Other courses like MS-WORD, WORD, NOTEPAD, EXCEL, ADVANCE EXCEL, POWER POINT, TYPING etc.</b></p>
-            <ol>
-                <li>Microsoft Office</li>
-                <li>Typing Courses</li>
-                <li>Web Designing</li>
-                <li>Tally</li>
-                <li>Certification Course & Computer</li>
-                <li>Animation & VNX</li>
-                <li>Software Related Courses</li>
-                <li>IT Diploma</li>
-                <li>Digital Marketing</li>
-                <li>Data Analytics</li>
-                <li>Artificial Intelligence</li>
-                <li>Hardware Course</li>
-            </ol>
+        <div style="background-color:greenyellow">
+            <marquee behavior="scroll" direction="left" scrollamount="4"><span style="font-size:24px; color:seagreen;">Chhaya Tech Coaching and Learning</span></marquee>
+            <p><b>Chhaya Tech Solution, We are providing Coaching for all type tech like HTML, CSS, JAVASCRIPT, .NET, ASP.NET, C#, MVC, WEB API, AJAX, JQUERY, LINQ, SQL, SQL SERVER, PL SQL, XML, DTD, XSD, XSLT, XSL, XPATH, XQUERY, XSL-FO, ePub, Dita, Docker, Aws, Jenkin, Proof Reading, QA, Software Testing, Software Management, Consultant, Agile, Scrum, git, Jira, ci/cd etc.</b></p>
+            <div>
+                <p style="color:forestgreen; font-size:14px;" align="center"><b>Other courses like MS-WORD, WORD, NOTEPAD, EXCEL, ADVANCE EXCEL, POWER POINT, TYPING etc.</b></p>
+                <ol>
+                    <li>Microsoft Office</li>
+                    <li>Typing Courses</li>
+                    <li>Web Designing</li>
+                    <li>Tally</li>
+                    <li>Certification Course & Computer</li>
+                    <li>Animation & VNX</li>
+                    <li>Software Related Courses</li>
+                    <li>IT Diploma</li>
+                    <li>Digital Marketing</li>
+                    <li>Data Analytics</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Hardware Course</li>
+                </ol>
+            </div>
         </div>
-        <p><a class="btn btn-default" href="">Know more &raquo;</a></p>
+        <div>
+            <h2 style="color:cyan; font-size:14px;" align="center">CNC, VMC PROGRAMING COURSE</h2>
+            <div style="background-color:yellowgreen">
+                <h3 id="blink" align="center" style="color:dodgerblue">CNC with CAD/CAM</h3>
+                <p>Module 1:	CNC programming, Setting, Tooling with Fanuc System Practical</p>
+                <p>Module 2:	CNC CAD</p>
+                <p>Module 3:	CNC CAM (DELCAM)</p>
+                <p>Module 4:	ED & MI</p>
+                <p>Module 5:	5S , 7QC Tools, Quality Problems</p>
+                <p>Module 6:	Interview Technique</p>
+            </div>
+            <h2 style="color:cyan; font-size:14px;" align="center">CNC, VMC PROGRAMING COURSE</h2>
+            <div style="background-color:yellowgreen">
+                <h2 id="blink1" align="center" style="color:dodgerblue">VMC with CAD/CAM</h2>
+                <p>Module 1:	VMC programming, Setting, Tooling with Siemens System Practical</p>
+                <p>Module 2:	VMC CAD</p>
+                <p>Module 3:	VMC CAM (DELCAM)</p>
+                <p>Module 4:	ED & MI</p>
+                <p>Module 5:	5S , 7QC Tools, Quality Problems</p>
+                <p>Module 6:	Interview Technique</p>
+            </div>
+            <p><a id="blink2" style="background-color:forestgreen" class="btn btn-default" href="http://www.chhayatech.somee.com/tech/create">&#8659;</a></p>
+            <p><a style="background-color:forestgreen" class="btn btn-default" href="http://www.chhayatech.somee.com/tech/create">Know more &raquo; Register with us&raquo;</a></p>
+        </div>
     </div>
     <div style="border:solid; margin-top:12px;">
         <marquee behavior="scroll" direction="left" scrollamount="4"><span style="font-size:24px; color:seagreen;">Chhaya Tech Manpower Management</span></marquee>
         <p><b>Chhaya Tech Solution, We are proving Manpower solution for all type industries across the globe.</b></p>
-        <p><a class="btn btn-default" href="">Know more &raquo;</a></p>
+        <p><a id="blink3" style="background-color:forestgreen" class="btn btn-default" href="http://www.chhayatech.somee.com/tech/create">&#8659;</a></p>
+        <p><a style="background-color:forestgreen" class="btn btn-default" href="http://www.chhayatech.somee.com/tech/create">Know more &raquo; Register with us&raquo;</a></p>
     </div>
     <div style="border:solid; margin-top:12px;">
         <marquee behavior="scroll" direction="left" scrollamount="4"><span style="font-size:24px; color:seagreen;">Chhaya Tech IT Consultant</span></marquee>
         <p><b>Chhaya Tech Solution, We are providing Consultant services for all IT type industries.</b></p>
-        <p><a class="btn btn-default" href="">Know more &raquo;</a></p>
+        <p><a id="blink4" style="background-color:forestgreen" class="btn btn-default" href="http://www.chhayatech.somee.com/tech/create">&#8659;</a></p>
+        <p><a style="background-color:forestgreen" class="btn btn-default" href="http://www.chhayatech.somee.com/tech/create">Know more &raquo; Register with us&raquo;</a></p>
     </div>
+    <script type="text/javascript">
+        var blink = document.getElementById('blink');
+        setInterval(function () {
+            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        }, 750);
+
+        var blink1 = document.getElementById('blink1');
+        setInterval(function () {
+            blink1.style.opacity = (blink1.style.opacity == 0 ? 1 : 0);
+        }, 750);
+
+        var blink2 = document.getElementById('blink2');
+        setInterval(function () {
+            blink2.style.opacity = (blink2.style.opacity == 0 ? 1 : 0);
+        }, 200);
+
+        var blink3 = document.getElementById('blink3');
+        setInterval(function () {
+            blink3.style.opacity = (blink3.style.opacity == 0 ? 1 : 0);
+        }, 200);
+
+
+        var blink4 = document.getElementById('blink4');
+        setInterval(function () {
+            blink4.style.opacity = (blink4.style.opacity == 0 ? 1 : 0);
+        }, 200);
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+
+    </script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
 </body>

@@ -215,6 +215,8 @@
     <Content Include="Views\Tech\Details.cshtml" />
     <Content Include="Views\Tech\Edit.cshtml" />
     <Content Include="Views\Tech\Index.cshtml" />
+    <Content Include="Views\Home\Technews.cshtml" />
+    <Content Include="Views\Home\carousel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

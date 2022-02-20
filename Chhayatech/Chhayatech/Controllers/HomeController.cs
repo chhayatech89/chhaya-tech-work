@@ -39,9 +39,24 @@ namespace Chhayatech.Controllers
         }
 
 
+        public ActionResult Technews()
+        {
+
+            return View();
+
+        }
+
+
         public ActionResult Healthinfo()
         {
             return View();
+        }
+
+
+        public ActionResult carousel()
+        {
+            return View();
+        
         }
 
 
