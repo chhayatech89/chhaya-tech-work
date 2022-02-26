@@ -60,6 +60,13 @@ namespace Chhayatech.Controllers
         }
 
 
+        public ActionResult AllLinks()
+        {
+            return View();
+        
+        }
+
+
         public ActionResult Career()
         {
             ViewBag.Message = "Your contact page.";
