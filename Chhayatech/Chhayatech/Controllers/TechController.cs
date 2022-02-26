@@ -52,11 +52,38 @@ namespace Chhayatech.Controllers
             {
                 db.regs.Add(reg);
                 db.SaveChanges();
-                return RedirectToAction("About", "Home");
+                Random RndNum = new Random();
+
+                int RnNum = RndNum.Next(100, 9999);
+
+                ViewBag.message = RnNum.ToString();
+                ViewBag.message1 = "testing jjjkjkj";
+
+                ViewData["f"] = RnNum;
+
+                return RedirectToAction("SuccessReg", "Tech");
             }
 
             return View(reg);
         }
+
+        public ActionResult SuccessReg()
+        {
+
+            /*
+            Random RndNum = new Random();
+
+            int RnNum = RndNum.Next(100, 9999);
+
+            ViewBag.message = RndNum;
+            ViewData["f"] = RnNum;
+*/
+
+
+            return View();
+        
+        }
+
 
         // GET: Tech/Edit/5
         public ActionResult Edit(string id)

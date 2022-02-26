@@ -1,0 +1,46 @@
+﻿
+
+@{
+    ViewBag.Title = "SuccessReg";
+}
+<html>
+<head>
+    <meta charset="UTF-8" />
+</head>
+<body>
+<br/>
+<span style="background-color:greenyellow;font-size:20px;">Read in English</span>
+<span style="background-color:greenyellow;font-size:20px; float:right;">हिंदी में पढ़ें</span>
+
+    <h2 id="blink" align="center" style="color:greenyellow;">Congratulations!!! You have been Successfully Registered with Us</h2>
+    <h2 id="blink" align="center" style="color:greenyellow;">बधाई हो!!! आप हमारे साथ सफलतापूर्वक पंजीकृत हो गए हैं</h2>
+    <span style="background-color:greenyellow; font-size:20px;">@Html.ActionLink("Go To Home", "About", "Home")</span>
+    <span align="right" style="background-color:greenyellow; font-size:20px; float:right">@Html.ActionLink("To Know More", "About", "Home")</span>
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    <a href="@Url.Action("About", "Home")"><img src="~/Content/Chhayatech-compaign-1.PNG" class="img-circle img-responsive" /></a>
+                </p>
+                <p>
+                    <a href="@Url.Action("About", "Home")"><img src="~/Content/Chhayatech.PNG" class="img-rounded img-responsive" /></a>
+                </p>
+
+            </div>
+
+        </div>
+
+        <div>
+            <h2 align="center" style="background-color:forestgreen;">See Our Course list</h2>
+            <p align="center" style="background-color:yellowgreen; font-size:20px;">@Html.ActionLink("Click here Courses List", "Course-Details", "Tech")</p>
+        </div>
+    </div>
+    <script>
+        var blink = document.getElementById('blink');
+        setInterval(function () {
+            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        }, 555);
+
+    </script>
+</body>
