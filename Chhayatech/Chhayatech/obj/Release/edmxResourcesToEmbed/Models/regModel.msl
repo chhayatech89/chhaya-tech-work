@@ -10,5 +10,15 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="clists">
+      <EntityTypeMapping TypeName="techregisModel.clist">
+        <MappingFragment StoreEntitySet="clist">
+          <ScalarProperty Name="cfee" ColumnName="cfee" />
+          <ScalarProperty Name="cduration" ColumnName="cduration" />
+          <ScalarProperty Name="cname" ColumnName="cname" />
+          <ScalarProperty Name="cid" ColumnName="cid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

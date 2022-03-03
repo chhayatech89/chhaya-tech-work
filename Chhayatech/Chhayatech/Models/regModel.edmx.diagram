@@ -6,6 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="60e12d684ea9411799599d50574636ba" Name="Diagram1">
         <EntityTypeShape EntityType="techregisModel.reg" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="techregisModel.clist" Width="1.5" PointX="3.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

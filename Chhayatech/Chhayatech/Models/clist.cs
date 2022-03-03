@@ -12,10 +12,11 @@ namespace Chhayatech.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class reg
+    public partial class clist
     {
-        public string mobileno { get; set; }
-        public string emailid { get; set; }
-        public string name { get; set; }
+        public string cid { get; set; }
+        public string cname { get; set; }
+        public string cduration { get; set; }
+        public string cfee { get; set; }
     }
 }
