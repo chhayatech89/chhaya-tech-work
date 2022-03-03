@@ -128,10 +128,14 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CourselistsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TechController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\clist.cs">
+      <DependentUpon>regModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\reg.cs">
       <DependentUpon>regModel.tt</DependentUpon>
@@ -226,6 +230,12 @@
     <Content Include="Views\Home\carousel.cshtml" />
     <Content Include="Views\Home\AllLinks.cshtml" />
     <Content Include="Views\Tech\SuccessReg.cshtml" />
+    <Content Include="Views\Courselists\Create.cshtml" />
+    <Content Include="Views\Courselists\Delete.cshtml" />
+    <Content Include="Views\Courselists\Details.cshtml" />
+    <Content Include="Views\Courselists\Edit.cshtml" />
+    <Content Include="Views\Courselists\Index.cshtml" />
+    <Content Include="Views\Courselists\Fcon.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

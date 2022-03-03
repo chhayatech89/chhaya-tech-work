@@ -17,10 +17,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/09/2013 16:29:20</publishTime>
     </File>
     <File Include="bin/Chhayatech.dll">
-      <publishTime>02/23/2022 11:37:40</publishTime>
+      <publishTime>03/03/2022 14:52:27</publishTime>
     </File>
     <File Include="bin/Chhayatech.pdb">
-      <publishTime>02/23/2022 11:37:40</publishTime>
+      <publishTime>03/03/2022 14:52:27</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>10/23/2017 13:15:18</publishTime>
@@ -278,7 +278,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/08/2022 19:02:39</publishTime>
     </File>
     <File Include="Models/regModel.edmx.diagram">
-      <publishTime>02/17/2022 18:59:14</publishTime>
+      <publishTime>02/03/2022 19:09:02</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>02/08/2022 19:03:20</publishTime>
@@ -319,11 +319,29 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Scripts/modernizr-2.8.3.js">
       <publishTime>02/08/2022 19:03:40</publishTime>
     </File>
+    <File Include="Views/Courselists/Create.cshtml">
+      <publishTime>02/03/2022 22:57:03</publishTime>
+    </File>
+    <File Include="Views/Courselists/Delete.cshtml">
+      <publishTime>02/03/2022 19:12:57</publishTime>
+    </File>
+    <File Include="Views/Courselists/Details.cshtml">
+      <publishTime>02/03/2022 19:12:57</publishTime>
+    </File>
+    <File Include="Views/Courselists/Edit.cshtml">
+      <publishTime>02/03/2022 19:12:58</publishTime>
+    </File>
+    <File Include="Views/Courselists/Fcon.cshtml">
+      <publishTime>03/03/2022 11:11:41</publishTime>
+    </File>
+    <File Include="Views/Courselists/Index.cshtml">
+      <publishTime>02/03/2022 23:45:02</publishTime>
+    </File>
     <File Include="Views/Home/About.cshtml">
-      <publishTime>02/21/2022 12:08:26</publishTime>
+      <publishTime>03/03/2022 14:48:29</publishTime>
     </File>
     <File Include="Views/Home/AllLinks.cshtml">
-      <publishTime>02/20/2022 19:07:02</publishTime>
+      <publishTime>03/03/2022 10:00:35</publishTime>
     </File>
     <File Include="Views/Home/Career.cshtml">
       <publishTime>02/16/2022 12:32:15</publishTime>
@@ -332,16 +350,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/20/2022 15:03:55</publishTime>
     </File>
     <File Include="Views/Home/Contact.cshtml">
-      <publishTime>02/08/2022 22:42:51</publishTime>
+      <publishTime>03/03/2022 14:49:03</publishTime>
     </File>
     <File Include="Views/Home/EdFund.cshtml">
       <publishTime>02/15/2022 18:58:56</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>02/23/2022 11:37:25</publishTime>
+      <publishTime>03/03/2022 14:46:55</publishTime>
     </File>
     <File Include="Views/Home/Technews.cshtml">
-      <publishTime>02/23/2022 00:56:09</publishTime>
+      <publishTime>02/24/2022 21:27:26</publishTime>
     </File>
     <File Include="Views/Home/Tour.cshtml">
       <publishTime>02/20/2022 18:58:58</publishTime>

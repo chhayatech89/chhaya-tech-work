@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Chhayatech.Models.clist>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 align="center">Course Lists</h2>
+
+
+<p align="center"><a style="background-color:forestgreen" class="btn btn-default" href="http://www.chhayatech.somee.com/tech/create">To Take Course &raquo; Register with us&raquo;</a></p>
+
+<p style="background-color:yellowgreen;" align="center"><b>To Take Course &raquo; Call to us on 9457985118&raquo;</b></p>
+
+<p style="background-color:yellow;" align="center"><b>Note: These courses are for selected candidate.</b></p>
+
+
+@*
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+*@
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.cname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cduration)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cfee)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.cname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cduration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cfee)
+            </td>
+            <td>
+                @*
+
+                    @Html.ActionLink("Edit", "Edit", new { id=item.cid }) |
+                    @Html.ActionLink("Details", "Details", new { id=item.cid }) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.cid })
+
+                *@
+
+            </td>
+        </tr>
+    }
+
+</table>

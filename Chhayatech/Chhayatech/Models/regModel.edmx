@@ -4,7 +4,16 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="techregisModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="techregisModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="clist">
+          <Key>
+            <PropertyRef Name="cid" />
+          </Key>
+          <Property Name="cid" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="cname" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="cduration" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="cfee" Type="varchar" MaxLength="250" Nullable="false" />
+        </EntityType>
         <EntityType Name="reg">
           <Key>
             <PropertyRef Name="mobileno" />
@@ -14,10 +23,10 @@
           <Property Name="name" Type="varchar" MaxLength="100" Nullable="false" />
         </EntityType>
         <EntityContainer Name="techregisModelStoreContainer">
+          <EntitySet Name="clist" EntityType="Self.clist" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="reg" EntityType="Self.reg" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="techregisModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -31,7 +40,17 @@
         </EntityType>
         <EntityContainer Name="techregisEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="regs" EntityType="Self.reg" />
+          <EntitySet Name="clists" EntityType="techregisModel.clist" />
         </EntityContainer>
+        <EntityType Name="clist">
+          <Key>
+            <PropertyRef Name="cid" />
+          </Key>
+          <Property Name="cid" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="cname" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="cduration" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="cfee" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -44,6 +63,16 @@
                 <ScalarProperty Name="mobileno" ColumnName="mobileno" />
                 <ScalarProperty Name="emailid" ColumnName="emailid" />
                 <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="clists">
+            <EntityTypeMapping TypeName="techregisModel.clist">
+              <MappingFragment StoreEntitySet="clist">
+                <ScalarProperty Name="cfee" ColumnName="cfee" />
+                <ScalarProperty Name="cduration" ColumnName="cduration" />
+                <ScalarProperty Name="cname" ColumnName="cname" />
+                <ScalarProperty Name="cid" ColumnName="cid" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

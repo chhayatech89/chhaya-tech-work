@@ -1,0 +1,42 @@
+﻿@model Chhayatech.Models.clist
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>clist</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.cname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cduration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cduration)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cfee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cfee)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.cid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

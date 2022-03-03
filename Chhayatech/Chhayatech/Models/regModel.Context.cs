@@ -26,5 +26,6 @@ namespace Chhayatech.Models
         }
     
         public virtual DbSet<reg> regs { get; set; }
+        public virtual DbSet<clist> clists { get; set; }
     }
 }
