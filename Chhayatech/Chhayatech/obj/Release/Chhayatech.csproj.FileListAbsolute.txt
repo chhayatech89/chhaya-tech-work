@@ -155,8 +155,8 @@ C:\Users\Fateh\Desktop\zoom\Chhaya\08-Feb\Chhayatech\Chhayatech\bin\System.Web.W
 C:\Users\Fateh\Desktop\zoom\Chhaya\08-Feb\Chhayatech\Chhayatech\bin\Newtonsoft.Json.xml
 C:\Users\Fateh\Desktop\zoom\Chhaya\08-Feb\Chhayatech\Chhayatech\bin\Antlr3.Runtime.pdb
 C:\Users\Fateh\Desktop\zoom\Chhaya\08-Feb\Chhayatech\Chhayatech\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Fateh\Desktop\zoom\Chhaya\08-Feb\Chhayatech\Chhayatech\obj\Release\Chhayatech.csprojAssemblyReference.cache
 C:\Users\Fateh\Desktop\zoom\Chhaya\08-Feb\Chhayatech\Chhayatech\obj\Release\Chhayatech.csproj.CoreCompileInputs.cache
 C:\Users\Fateh\Desktop\zoom\Chhaya\08-Feb\Chhayatech\Chhayatech\obj\Release\Chhayatech.csproj.CopyComplete
 C:\Users\Fateh\Desktop\zoom\Chhaya\08-Feb\Chhayatech\Chhayatech\obj\Release\Chhayatech.dll
 C:\Users\Fateh\Desktop\zoom\Chhaya\08-Feb\Chhayatech\Chhayatech\obj\Release\Chhayatech.pdb
+C:\Users\Fateh\Desktop\zoom\Chhaya\08-Feb\Chhayatech\Chhayatech\obj\Release\Chhayatech.csprojAssemblyReference.cache

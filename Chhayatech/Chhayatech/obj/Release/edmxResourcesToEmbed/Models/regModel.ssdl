@@ -17,8 +17,18 @@
     <Property Name="emailid" Type="varchar" MaxLength="100" Nullable="false" />
     <Property Name="name" Type="varchar" MaxLength="100" Nullable="false" />
   </EntityType>
+  <EntityType Name="ulogin">
+    <Key>
+      <PropertyRef Name="Uid" />
+    </Key>
+    <Property Name="Uid" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Uname" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Upass" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Urole" Type="varchar" MaxLength="250" />
+  </EntityType>
   <EntityContainer Name="techregisModelStoreContainer">
     <EntitySet Name="clist" EntityType="Self.clist" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="reg" EntityType="Self.reg" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ulogin" EntityType="Self.ulogin" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>

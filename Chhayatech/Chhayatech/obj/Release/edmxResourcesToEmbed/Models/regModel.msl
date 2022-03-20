@@ -20,5 +20,15 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="ulogins">
+      <EntityTypeMapping TypeName="techregisModel.ulogin">
+        <MappingFragment StoreEntitySet="ulogin">
+          <ScalarProperty Name="Urole" ColumnName="Urole" />
+          <ScalarProperty Name="Upass" ColumnName="Upass" />
+          <ScalarProperty Name="Uname" ColumnName="Uname" />
+          <ScalarProperty Name="Uid" ColumnName="Uid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

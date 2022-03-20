@@ -11,6 +11,7 @@
   <EntityContainer Name="techregisEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="regs" EntityType="Self.reg" />
     <EntitySet Name="clists" EntityType="techregisModel.clist" />
+    <EntitySet Name="ulogins" EntityType="techregisModel.ulogin" />
   </EntityContainer>
   <EntityType Name="clist">
     <Key>
@@ -20,5 +21,14 @@
     <Property Name="cname" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
     <Property Name="cduration" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
     <Property Name="cfee" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ulogin">
+    <Key>
+      <PropertyRef Name="Uid" />
+    </Key>
+    <Property Name="Uid" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Uname" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Upass" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Urole" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
   </EntityType>
 </Schema>

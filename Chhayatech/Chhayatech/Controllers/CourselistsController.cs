@@ -20,9 +20,15 @@ namespace Chhayatech.Controllers
             return View(db.clists.ToList());
         }
 
+        [Authorize]
         public ActionResult Fcon()
         {
             return View(db.clists.ToList());
+        }
+
+        public ActionResult Flearn()
+        {
+            return View();
         }
 
 
