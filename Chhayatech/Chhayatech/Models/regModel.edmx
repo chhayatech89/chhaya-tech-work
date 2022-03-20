@@ -22,9 +22,19 @@
           <Property Name="emailid" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="name" Type="varchar" MaxLength="100" Nullable="false" />
         </EntityType>
+        <EntityType Name="ulogin">
+          <Key>
+            <PropertyRef Name="Uid" />
+          </Key>
+          <Property Name="Uid" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="Uname" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="Upass" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="Urole" Type="varchar" MaxLength="250" />
+        </EntityType>
         <EntityContainer Name="techregisModelStoreContainer">
           <EntitySet Name="clist" EntityType="Self.clist" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="reg" EntityType="Self.reg" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ulogin" EntityType="Self.ulogin" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -41,6 +51,7 @@
         <EntityContainer Name="techregisEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="regs" EntityType="Self.reg" />
           <EntitySet Name="clists" EntityType="techregisModel.clist" />
+          <EntitySet Name="ulogins" EntityType="techregisModel.ulogin" />
         </EntityContainer>
         <EntityType Name="clist">
           <Key>
@@ -50,6 +61,15 @@
           <Property Name="cname" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
           <Property Name="cduration" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
           <Property Name="cfee" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ulogin">
+          <Key>
+            <PropertyRef Name="Uid" />
+          </Key>
+          <Property Name="Uid" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Uname" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Upass" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Urole" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -73,6 +93,16 @@
                 <ScalarProperty Name="cduration" ColumnName="cduration" />
                 <ScalarProperty Name="cname" ColumnName="cname" />
                 <ScalarProperty Name="cid" ColumnName="cid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ulogins">
+            <EntityTypeMapping TypeName="techregisModel.ulogin">
+              <MappingFragment StoreEntitySet="ulogin">
+                <ScalarProperty Name="Urole" ColumnName="Urole" />
+                <ScalarProperty Name="Upass" ColumnName="Upass" />
+                <ScalarProperty Name="Uname" ColumnName="Uname" />
+                <ScalarProperty Name="Uid" ColumnName="Uid" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
